@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header 영역 */
+#header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0px 0px 5px 0.5px #666;
+  opacity: 0.7;
+  z-index: 9999;
+}
+#header .inner {
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  position: relative;
+}
+#header .inner h1 {
+  position: relative;
+}
+#header .inner h1 a {
+  font: 23px/1px;
+  color: #b3cdda;
+  letter-spacing: -1px;
+}
+#header .inner h1:hover a {
+  color: blue;
+}
+#header .inner .menuweb {
+  display: block;
+  position: relative;
+}
+#header .inner .menuweb #gnb {
+  display: block;
+  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#header .inner .menuweb #gnb li {
+  float: left;
+  margin-left: 10px;
+}
+#header .inner .menuweb #gnb li a {
+  display: block;
+  padding: 10px;
+  font: bold 14px/1;
+  color: #20292f;
+}
+#header .inner .menuweb #gnb li a i {
+  margin-left: -10px;
+}
+#header .inner .menuweb #gnb li a i:hover {
+  color: #b3cdda;
+}
+
+/* visual 영역 */
+#visual {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  background: url(../img/visual4.png) no-repeat;
+  background-size: cover;
+}
+#visual .wrap {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#visual .wrap .title p {
+  font: 14px/1.4 "Shadows Into Light";
+  letter-spacing: 5px;
+  color: #666;
+}
+#visual .wrap .title h1 {
+  font: bold 150px/1.2 "Shadows Into Light";
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: -2px 0px #000, 2px 0px #b3cdda, 0px -2px #b3cdda, 0px 2px #b3cdda;
+}
+#visual .wrap .artshow {
+  width: 1180px;
+  padding: 100px 0px 250px 0px;
+}
+#visual .wrap .artshow article {
+  float: left;
+  width: 380px;
+  margin-right: 20px;
+}
+#visual .wrap .artshow article:nth-of-type(3) {
+  margin-right: 0px;
+}
+#visual .wrap .artshow article h3 {
+  font: bold 14px/3 "poppins";
+  letter-spacing: 5px;
+  color: #fff;
+}
+#visual .wrap .artshow article p {
+  font: 12px/2 "poppins";
+  color: #fff;
+}
+#visual .wrap .btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#visual .wrap .btn1 article {
+  float: left;
+  margin-right: 100px;
+  padding: 20px 50px;
+  font: bold 14px "poppins";
+}
+#visual .wrap .btn1 article:nth-of-type(1) {
+  border: 2px solid #000;
+}
+#visual .wrap .btn1 article:nth-of-type(1) a {
+  color: #000;
+}
+#visual .wrap .btn1 article:nth-of-type(1) a i {
+  opacity: 0;
+  font-size: 18px;
+}
+#visual .wrap .btn1 article:nth-of-type(1) a:hover i {
+  opacity: 1;
+  transition: 0.8s;
+}
+#visual .wrap .btn1 article:nth-of-type(2) {
+  margin-right: 0px;
+  background-color: black;
+}
+#visual .wrap .btn1 article:nth-of-type(2) a {
+  color: #fff;
+}
+#visual .wrap .btn1 article:nth-of-type(2) a i {
+  opacity: 0;
+  font-size: 18px;
+}
+#visual .wrap .btn1 article:nth-of-type(2) a:hover i {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+/* new 영역 */
+/* menu 영역 */
+/* video 영역 */
+/* banner 영역 */
+/* footer 영역 */
+
+/*# sourceMappingURL=style.css.map */
