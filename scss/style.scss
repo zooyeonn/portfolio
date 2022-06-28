@@ -141,7 +141,11 @@
                 font: bold 14px 'poppins';
 
                 &:nth-of-type(1) {
-                    border: 2px solid #000;
+                    // border: 2px solid #fff;
+                    background-color: #fff;
+                    &:hover {
+                        background-color: #a5bdc9;
+                    }
                     a {
                         color: #000;
                         i {
@@ -150,6 +154,7 @@
                             
                         }
                         &:hover i {
+                            
                             opacity: 1;
                             transition: 0.8s;
                         }
@@ -157,8 +162,9 @@
                 }
 
                 &:nth-of-type(2) {
+                    border: 2px solid #fff;
                     margin-right: 0px;
-                    background-color: black;
+                    // background-color: #fff;
                     a {
                         color: #fff;
                         i {
