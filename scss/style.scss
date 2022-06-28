@@ -23,9 +23,9 @@
             position: relative;
 
             a {
-            font: 23px/1px;            
+            font: bold 24px/1px 'Shadows Into Light';            
             color: #b3cdda;
-            letter-spacing: -1px;
+            letter-spacing: 3px;
             }
 
             &:hover a {
@@ -39,23 +39,25 @@
 
             #gnb {
                 display: block;
-                position: relative;
+                // position: relative;
                 position: absolute;
                 right: 0;
                 bottom: 0;
 
                 li {
                     float: left;
-                    margin-left: 10px;
 
                     a {
                         display: block;
                         padding: 10px;
-                        font: bold 14px/1;
+                        font: bold 14px/1 'poppins';
                         color: #20292f;
+                        margin-left: 30px;
                         
                         i {
                             margin-left: -10px;
+                            font-size: 18px;
+
                             &:hover {
                                 color: #b3cdda;
                             }
@@ -138,23 +140,24 @@
                 float: left;
                 margin-right: 100px;
                 padding: 20px 50px;
-                font: bold 14px 'poppins';
+                font: bold 16px 'poppins';
 
                 &:nth-of-type(1) {
-                    // border: 2px solid #fff;
-                    background-color: #fff;
+                    border: 2px solid #fff;
+
                     &:hover {
-                        background-color: #a5bdc9;
+                        background-color: #000;
                     }
+
                     a {
-                        color: #000;
+                        color: #fff;
+
                         i {
                             opacity: 0;
-                            font-size: 18px;
-                            
+                            font-size: 18px;         
                         }
+
                         &:hover i {
-                            
                             opacity: 1;
                             transition: 0.8s;
                         }
@@ -165,8 +168,14 @@
                     border: 2px solid #fff;
                     margin-right: 0px;
                     // background-color: #fff;
+
+                    &:hover {
+                        background-color: #000;
+                    }
+
                     a {
                         color: #fff;
+
                         i {
                             opacity: 0;
                             font-size: 18px;
@@ -190,10 +199,194 @@
 
 /* new 영역 */
 
-/* menu 영역 */
+#product {
+    width: 100%;
+    height: 1400px;
+    position: relative;
+    background: url(../img/product3.png) no-repeat;
+    background-size: cover;
+
+    .inner {
+
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        .text {
+
+            p {
+                font: 14px/1.4 'Shadows Into Light';
+                letter-spacing: 5px;
+                color: #666;
+                padding: 30px;
+            }
+
+            h1 {
+
+                font: bold 80px/1.2 'Shadows Into Light';
+                color: #fff;
+                letter-spacing: 10px;
+                text-shadow: -2px 0px #000, 2px 0px #b3cdda, 0px -2px #b3cdda, 0px 2px #b3cdda;
+                margin-bottom: 50px;
+            }
+
+        }
+
+        .pic {
+
+            .dirty {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    transform: translateX(-20%);
+
+                    &:hover {
+                        filter: grayscale(80%);
+                        opacity: 1;
+                    }
+
+                }
+                &:hover .dirty_txt {
+                    opacity: 1;
+                    transition: 0.8s;
+                }
+                
+                .dirty_txt {
+                    opacity: 0;
+                    transform: translateX(-50%) translateY(10%);
+                    text-align: left;
+                    background-color: #fff;
+                    border: 1px solid #b3cdda;
+                    padding: 40px;
+
+                    h3 {
+                        font: bold 16px/2 'poppins';
+                    }
+
+                    p {
+                        font: normal 14px/1.4 'poppins';
+                        margin-bottom: 20px;
+                    }
+
+                    span {
+                        font: bold normal 14px/1.4 'poppins';
+                        a {
+                            color: #b3cdda;
+                        }
+                    }
+                }
+
+            }
+
+            .twilight {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    transform: translateX(20%);
+
+                    &:hover {
+                        filter: grayscale(80%);
+                        opacity: 1;
+                    }
+
+                }
+
+                &:hover .twilight_txt {
+                    opacity: 1;
+                    transition: 0.8s;
+                }
+                
+                .twilight_txt {
+                    opacity: 0;
+                    transform: translateX(50%) translateY(10%);
+                    text-align: left;
+                    background-color: #fff;
+                    border: 1px solid #b3cdda;
+                    padding: 40px;
+                    z-index: 2;
+
+                    h3 {
+                        font: bold 14px/1.4 'poppins';
+                    }
+
+                    p {
+                        font: normal 14px/1.4 'poppins';
+                        margin-bottom: 20px;
+                    }
+
+                    span {
+                        font: bold normal 14px/1.4 'poppins';
+
+                        a {
+                            color: #b3cdda;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* itemlist 영역 */
+#itemlist {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: #b3cdda;
+}
 
 /* video 영역 */
+#video {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+}
 
 /* banner 영역 */
+#banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #b3cdda;
+}
 
 /* footer 영역 */
+#footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    border-top-width: 2px solid #000;
+
+    .inner {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+
+        article {
+            margin-right: 20 30px;
+            padding: 20px;
+            
+            &:nth-of-type(3) {
+
+                .follow {
+                    ul {
+                        
+                        li {
+                            float: left;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

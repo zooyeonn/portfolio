@@ -35,9 +35,9 @@ a {
   position: relative;
 }
 #header .inner h1 a {
-  font: 23px/1px;
+  font: bold 24px/1px "Shadows Into Light";
   color: #b3cdda;
-  letter-spacing: -1px;
+  letter-spacing: 3px;
 }
 #header .inner h1:hover a {
   color: blue;
@@ -48,23 +48,23 @@ a {
 }
 #header .inner .menuweb #gnb {
   display: block;
-  position: relative;
   position: absolute;
   right: 0;
   bottom: 0;
 }
 #header .inner .menuweb #gnb li {
   float: left;
-  margin-left: 10px;
 }
 #header .inner .menuweb #gnb li a {
   display: block;
   padding: 10px;
-  font: bold 14px/1;
+  font: bold 14px/1 "poppins";
   color: #20292f;
+  margin-left: 30px;
 }
 #header .inner .menuweb #gnb li a i {
   margin-left: -10px;
+  font-size: 18px;
 }
 #header .inner .menuweb #gnb li a i:hover {
   color: #b3cdda;
@@ -126,16 +126,16 @@ a {
   float: left;
   margin-right: 100px;
   padding: 20px 50px;
-  font: bold 14px "poppins";
+  font: bold 16px "poppins";
 }
 #visual .wrap .btn1 article:nth-of-type(1) {
-  background-color: #fff;
+  border: 2px solid #fff;
 }
 #visual .wrap .btn1 article:nth-of-type(1):hover {
-  background-color: #a5bdc9;
+  background-color: #000;
 }
 #visual .wrap .btn1 article:nth-of-type(1) a {
-  color: #000;
+  color: #fff;
 }
 #visual .wrap .btn1 article:nth-of-type(1) a i {
   opacity: 0;
@@ -148,6 +148,9 @@ a {
 #visual .wrap .btn1 article:nth-of-type(2) {
   border: 2px solid #fff;
   margin-right: 0px;
+}
+#visual .wrap .btn1 article:nth-of-type(2):hover {
+  background-color: #000;
 }
 #visual .wrap .btn1 article:nth-of-type(2) a {
   color: #fff;
@@ -162,9 +165,153 @@ a {
 }
 
 /* new 영역 */
-/* menu 영역 */
+#product {
+  width: 100%;
+  height: 1400px;
+  position: relative;
+  background: url(../img/product3.png) no-repeat;
+  background-size: cover;
+}
+#product .inner {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#product .inner .text p {
+  font: 14px/1.4 "Shadows Into Light";
+  letter-spacing: 5px;
+  color: #666;
+  padding: 30px;
+}
+#product .inner .text h1 {
+  font: bold 80px/1.2 "Shadows Into Light";
+  color: #fff;
+  letter-spacing: 10px;
+  text-shadow: -2px 0px #000, 2px 0px #b3cdda, 0px -2px #b3cdda, 0px 2px #b3cdda;
+  margin-bottom: 50px;
+}
+#product .inner .pic .dirty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#product .inner .pic .dirty img {
+  transform: translateX(-20%);
+}
+#product .inner .pic .dirty img:hover {
+  filter: grayscale(80%);
+  opacity: 1;
+}
+#product .inner .pic .dirty:hover .dirty_txt {
+  opacity: 1;
+  transition: 0.8s;
+}
+#product .inner .pic .dirty .dirty_txt {
+  opacity: 0;
+  transform: translateX(-50%) translateY(10%);
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #b3cdda;
+  padding: 40px;
+}
+#product .inner .pic .dirty .dirty_txt h3 {
+  font: bold 16px/2 "poppins";
+}
+#product .inner .pic .dirty .dirty_txt p {
+  font: normal 14px/1.4 "poppins";
+  margin-bottom: 20px;
+}
+#product .inner .pic .dirty .dirty_txt span {
+  font: bold normal 14px/1.4 "poppins";
+}
+#product .inner .pic .dirty .dirty_txt span a {
+  color: #b3cdda;
+}
+#product .inner .pic .twilight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#product .inner .pic .twilight img {
+  transform: translateX(20%);
+}
+#product .inner .pic .twilight img:hover {
+  filter: grayscale(80%);
+  opacity: 1;
+}
+#product .inner .pic .twilight:hover .twilight_txt {
+  opacity: 1;
+  transition: 0.8s;
+}
+#product .inner .pic .twilight .twilight_txt {
+  opacity: 0;
+  transform: translateX(50%) translateY(10%);
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #b3cdda;
+  padding: 40px;
+  z-index: 2;
+}
+#product .inner .pic .twilight .twilight_txt h3 {
+  font: bold 14px/1.4 "poppins";
+}
+#product .inner .pic .twilight .twilight_txt p {
+  font: normal 14px/1.4 "poppins";
+  margin-bottom: 20px;
+}
+#product .inner .pic .twilight .twilight_txt span {
+  font: bold normal 14px/1.4 "poppins";
+}
+#product .inner .pic .twilight .twilight_txt span a {
+  color: #b3cdda;
+}
+
+/* itemlist 영역 */
+#itemlist {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-color: #b3cdda;
+}
+
 /* video 영역 */
+#video {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-color: #fff;
+}
+
 /* banner 영역 */
+#banner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-color: #b3cdda;
+}
+
 /* footer 영역 */
+#footer {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  border-top-width: 2px solid #000;
+}
+#footer .inner {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+#footer .inner article {
+  margin-right: 20 30px;
+  padding: 20px;
+}
+#footer .inner article:nth-of-type(3) .follow ul li {
+  float: left;
+  margin-right: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */
