@@ -55,6 +55,7 @@ table {
 .join .inner table th, .join .inner table td {
   border-bottom: 1px solid #b3cdda #b3cdda;
   padding: 15px 30px;
+  font: bold 12px/1.4 "poppins";
 }
 .join .inner table th {
   width: 20%;
@@ -62,6 +63,42 @@ table {
 .join .inner table th input[type=reset], .join .inner table th input[type=submit] {
   width: 30%;
   height: 40px;
+  border: 1px solid #333;
+  margin: 10px;
+  font: bold 12px/40px "poppins";
+  color: #666;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.join .inner table th input[type=reset]:hover, .join .inner table th input[type=submit]:hover {
+  background: #333;
+  color: #fff;
+}
+.join .inner table td {
+  border-left: 1px solid #aaa;
+}
+.join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+.join .inner table td input[type=radio], .join .inner table td input[type=checkbox] {
+  margin-right: 30px;
+}
+.join .inner table td textarea {
+  resize: none;
+  width: 60%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+.join .inner table td p {
+  font: 11px/1 "맑은 고딕";
+  color: hotpink;
+  margin-top: 5px;
 }
 
 #footer {
