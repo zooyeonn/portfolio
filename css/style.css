@@ -14,6 +14,50 @@ a {
   text-decoration: none;
 }
 
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.hidden {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
+.join {
+  width: 100%;
+  padding: 150px 0;
+}
+.join .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.join .inner h1 {
+  font: bold 50px/1 "Shadows Into Light";
+  color: #555;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.join .inner table {
+  border-top: 2px solid #b3cdda;
+  border-bottom: 2px solid #b3cdda;
+}
+.join .inner table th, .join .inner table td {
+  border-bottom: 1px solid #b3cdda #b3cdda;
+  padding: 15px 30px;
+}
+.join .inner table th {
+  width: 20%;
+}
+.join .inner table th input[type=reset], .join .inner table th input[type=submit] {
+  width: 30%;
+  height: 40px;
+}
+
 /* header 영역 */
 #header {
   width: 100%;
@@ -40,7 +84,7 @@ a {
   letter-spacing: 3px;
 }
 #header .inner h1:hover a {
-  color: blue;
+  color: #666;
 }
 #header .inner .menuweb {
   display: block;
@@ -164,7 +208,7 @@ a {
   transition: 0.8s;
 }
 
-/* new 영역 */
+/* product 영역 */
 #product {
   width: 100%;
   height: 1400px;
@@ -297,21 +341,32 @@ a {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  border-top-width: 2px solid #000;
 }
 #footer .inner {
   padding: 50px;
   display: flex;
   justify-content: center;
   align-items: top;
+  border-top-width: 2px solid #000;
 }
 #footer .inner article {
+  width: 20%;
   margin-right: 20 30px;
   padding: 20px;
 }
-#footer .inner article:nth-of-type(3) .follow ul li {
+#footer .inner article:nth-of-type(3) li {
   float: left;
   margin-right: 15px;
+}
+#footer .inner article h3 {
+  font: bold 14px/1.4 "poppins";
+  color: #333;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+#footer .inner article p {
+  font: normal 12px/1.2 "poppins";
+  color: #666;
 }
 
 /*# sourceMappingURL=style.css.map */

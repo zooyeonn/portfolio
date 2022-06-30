@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBERSHIP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/join.js"></script>
+</head>
+<body>
+    <section class="join">
+        <div class="inner">
+            <h1>JOIN US</h1>
+
+            <form action="result.html" method="get" id="member">
+                <fieldset>
+                    <legend class="hidden">회원가입</legend>
+                    <table>
+                        <caption>회원가입을 위한 정보 기입 테이블</caption>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row"><label for="userid">ID</label></th>
+                                <td><input type="text" name="userid" id="userid" placeholder="아이디를 입력해 주세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="pwd1">Password</label></th>
+                                <td><input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력해 주세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="pwd2">Re Password</label></th>
+                                <td><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 확인해 주세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="email">E-mail</label></th>
+                                <td><input type="text" name="email" id="email" placeholder="이메일을 입력해 주세요" required></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="job">Occupation</label></th>
+                                <td>
+                                    <select name="job" id="job">
+                                        <option value="">직업을 선택해 주세요</option>
+                                        <option value="student">학생</option>
+                                        <option value="unemployed">무직</option>
+                                        <option value="homemaker">주부</option>
+                                        <option value="woker">직장인</option>
+                                        <option value="owner">자영업자</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Preference Item</th>
+                                <td>
+                                    <label for="Skin">Skin</label>
+                                    <input type="checkbox" name="Preference" id="Skin" value="SKin">
+
+                                    <label for="Hair">Hair</label>
+                                    <input type="checkbox" name="Preference" id="music" value="Hair">
+
+                                    <label for="Shower">Shower</label>
+                                    <input type="checkbox" name="Preference" id="Shower" value="game">
+
+                                    <label for="Bath">Bath</label>
+                                    <input type="checkbox" name="Preference" id="Bath" value="Bath">
+
+                                    <label for="Perfume">Perfume</label>
+                                    <input type="checkbox" name="Preference" id="Perfume" value="Perfume">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row"><label for="comments">Comments</label></th>
+                                <td>
+                                    <textarea name="comments" id="comments" placeholder="세부 정보를 입력해 주세요" required></textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">
+                                    <input type="reset" value="cancel">
+                                    <input type="submit" value="submit">
+                                </th>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
