@@ -7,24 +7,25 @@
 #header {
     width: 100%;
     height: 80px;
-    position: fixed;
+    top: -20px;
+    opacity: 0.7;
+    position: sticky;
     border-bottom: 1px solid #ddd;
     background: #fff;
     box-shadow: 0px 0px 5px 0.5px #666;
-    opacity: 0.7;
     z-index: 9999;
 
     .inner {
         width: 100%;
         height: 60px;
-        padding: 15px;
+        padding: 25px;
         position: relative;
 
         h1 {
             position: relative;
 
             a {
-            font: bold 24px/1px 'Shadows Into Light';            
+            font: bold 30px/1px 'Shadows Into Light';            
             color: #b3cdda;
             letter-spacing: 3px;
             }
@@ -337,25 +338,87 @@
 /* itemlist 영역 */
 #itemlist {
     width: 100%;
-    height: 700px;
-    position: relative;
-    background-color: #b3cdda;
-}
-
-/* video 영역 */
-#video {
-    width: 100%;
-    height: 300px;
+    height: 1000px;
     position: relative;
     background-color: #fff;
+    margin-bottom: 30px;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        padding-top: 50px;
+
+        .features {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin-bottom: 50px;
+
+            p {
+                font: 20px/1.4 'Shadows Into Light';
+                letter-spacing: 5px;
+                color: #666;
+            }
+
+            h3 {
+                font: bold 80px/1.2 'Shadows Into Light';
+                color: #fff;
+                letter-spacing: 10px;
+                text-shadow: -2px 0px #000, 2px 0px #b3cdda, 0px -2px #b3cdda, 0px 2px #b3cdda;
+            }
+        }
+
+        .wrap {
+            overflow: hidden;
+            
+            article {
+                float: left;
+                width: 380px;
+                margin-bottom: 30px;
+                margin-right: 20px;
+                text-align: center;
+
+                &:nth-of-type(3n) {
+                    margin-right: 0px;
+                }
+
+                h4 {
+                    font: bold 14px/1.2 'poppins';
+                    color: #000;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font: normal 14px/1.2 'poppins';
+                    color: #666;
+
+                }
+                
+            }
+        }
+    }
 }
+
+
+
 
 /* banner 영역 */
 #banner {
     width: 100%;
     height: 300px;
     position: relative;
-    background-color: #b3cdda;
+    background-color: #333;
+}
+
+/* graph 영역 */
+#graph {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 50px;
 }
 
 /* footer 영역 */
@@ -363,10 +426,10 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
-    border-top: 1px solid #121212;
+    border-top: 1px solid #333;
 
     .inner {
-        padding: 50px;
+        padding: 30px 20px 30px 20px;
         display: flex;
         justify-content: center;
         align-items: top;
@@ -379,13 +442,15 @@
                 li {
                     float: left;
                     margin-right: 15px;
-                    a {color: #000;}
+                    a { 
+                        color: #000; 
+                        &:hover {
+                            color: #b3cdda;
+                        }
+                    }
                 }
 
             }
-            // &:nth-of-type(4) {
-                
-            // }
 
             h3 {
                 font: bold 14px/1.4 'poppins';
@@ -397,6 +462,25 @@
             p {
                 font: normal 12px/1.2 'poppins';
                 color: #666;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+
+                input[type=email] {
+                    padding: 5px;
+                    border-color: #b3cdda;
+                }
+
+                a {
+                    background: #000;
+                    padding: 10px 57px;
+                    color: #fff;
+                    border-radius: 3px;
+                    font: bold 12px/1.2 'poppins';
+                    &:hover {
+                        background: #b3cdda;
+                        color: #000;
+                    }
+                }
             }
 
     }

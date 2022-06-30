@@ -10,6 +10,27 @@
     <script defer src="js/join.js"></script>
 </head>
 <body>
+
+    <header id="header">
+        <div class="inner">
+                <h1><a href="index.html">LUSH KOREA</a></h1>
+        
+            <nav class="menuweb">
+                <ul id="gnb">
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                    <li><a href="join.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+
     <section class="join">
         <div class="inner">
             <h1>JOIN US</h1>
@@ -17,7 +38,7 @@
             <form action="result.html" method="get" id="member">
                 <fieldset>
                     <legend class="hidden">회원가입</legend>
-                    <table>
+                    <table class="t1">
                         <caption>회원가입을 위한 정보 기입 테이블</caption>
                         <tbody>
 
@@ -92,17 +113,26 @@
                                     <textarea name="comments" id="comments" placeholder="세부 정보를 입력해 주세요" required></textarea>
                                 </td>
                             </tr>
-
-                            <tr>
+                            <!-- <tr>
                                 <th colspan="2">
                                     <input type="reset" value="cancel">
                                     <input type="submit" value="submit">
                                 </th>
-                            </tr>
-
-
+                            </tr> -->
                         </tbody>
                     </table>
+
+                    <table class="t2">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">
+                                    <input type="submit" value="submit">
+                                    <input type="reset" value="cancel">
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </fieldset>
             </form>
         </div>
