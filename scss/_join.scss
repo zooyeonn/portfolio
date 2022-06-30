@@ -20,6 +20,14 @@ table{border-collapse: collapse;}
         table {
             border-top: 2px solid #b3cdda;
             border-bottom: 2px solid #b3cdda;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            caption {
+                display: none;
+            }
+
 
             th, td {
                 border-bottom: 1px solid #b3cdda#b3cdda;
@@ -34,5 +42,49 @@ table{border-collapse: collapse;}
                 }
             }
         }
+    }
+}
+
+#footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    border-top: 1px solid #121212;
+
+    .inner {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        
+        article {
+            width: 20%;
+            margin-right: 20 30px;
+            padding: 20px;
+            &:nth-of-type(3) {
+                li {
+                    float: left;
+                    margin-right: 15px;
+                    
+                    a{color: #000;}
+                }
+
+            }
+
+            h3 {
+                font: bold 14px/1.4 'poppins';
+                color: #333;
+                letter-spacing: 5px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font: normal 12px/1.2 'poppins';
+                color: #666;
+            }
+
+    }
+            
+        
     }
 }

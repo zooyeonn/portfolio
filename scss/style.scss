@@ -363,13 +363,13 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
+    border-top: 1px solid #121212;
 
     .inner {
         padding: 50px;
         display: flex;
         justify-content: center;
         align-items: top;
-        border-top-width: 2px solid #000;
 
         article {
             width: 20%;
@@ -379,6 +379,7 @@
                 li {
                     float: left;
                     margin-right: 15px;
+                    a {color: #000;}
                 }
 
             }
