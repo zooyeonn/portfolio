@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -12,6 +12,153 @@ ul, ol, li {
 
 a {
   text-decoration: none;
+}
+
+/* header 영역 */
+#header {
+  width: 100%;
+  height: 80px;
+  top: -20px;
+  opacity: 0.7;
+  position: sticky;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0px 0px 5px 0.5px #666;
+  z-index: 9999;
+}
+#header .inner {
+  width: 100%;
+  height: 60px;
+  padding: 25px;
+  position: relative;
+}
+#header .inner h1 {
+  position: relative;
+}
+#header .inner h1 a {
+  font: bold 30px/1px "Shadows Into Light";
+  color: #b3cdda;
+  letter-spacing: 3px;
+}
+#header .inner h1:hover a {
+  color: #666;
+}
+#header .inner .menuweb {
+  display: block;
+  position: relative;
+}
+#header .inner .menuweb #gnb {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#header .inner .menuweb #gnb li {
+  float: left;
+}
+#header .inner .menuweb #gnb li a {
+  display: block;
+  padding: 10px;
+  font: bold 14px/1 "poppins";
+  color: #20292f;
+  margin-left: 30px;
+}
+#header .inner .menuweb #gnb li a i {
+  margin-left: -10px;
+  font-size: 18px;
+}
+#header .inner .menuweb #gnb li a i:hover {
+  color: #b3cdda;
+}
+
+.content {
+  width: 100%;
+  padding: 0 0 150px;
+}
+.content .sub_visual {
+  width: 100%;
+  height: 150px;
+  background: #b3cdda;
+  margin-bottom: -30px;
+}
+.content .inner {
+  width: 1180px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+.content .inner h1 {
+  font: bold 60px/1 "Shadows Into Light";
+  color: #fff;
+  letter-spacing: 10px;
+  margin-bottom: 150px;
+  text-shadow: -2px 0px #000, 2px 0px #b3cdda, 0px -2px #b3cdda, 0px 2px #b3cdda;
+}
+.content .inner h1 span {
+  font: bold 20px/1 "poppins";
+  color: #e5e5e5;
+  letter-spacing: -1px;
+  text-shadow: none;
+}
+.content .inner h1 span::before {
+  content: "";
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+/* footer 영역 */
+#footer {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  border-top: 1px solid #333;
+}
+#footer .inner {
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+#footer .inner article {
+  width: 20%;
+  margin-right: 20 30px;
+  padding: 20px;
+}
+#footer .inner article:nth-of-type(3) li {
+  float: left;
+  margin-right: 15px;
+}
+#footer .inner article:nth-of-type(3) li a {
+  color: #000;
+}
+#footer .inner article:nth-of-type(3) li a:hover {
+  color: #b3cdda;
+}
+#footer .inner article h3 {
+  font: bold 14px/1.4 "poppins";
+  color: #333;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+#footer .inner article p {
+  font: normal 12px/1.2 "poppins";
+  color: #666;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+#footer .inner article p input[type=email] {
+  padding: 5px;
+  border-color: #b3cdda;
+}
+#footer .inner article p a {
+  background: #000;
+  padding: 10px 57px;
+  color: #fff;
+  border-radius: 3px;
+  font: bold 12px/1.2 "poppins";
+}
+#footer .inner article p a:hover {
+  background: #b3cdda;
+  color: #000;
 }
 
 fieldset {
@@ -249,6 +396,90 @@ table {
 #footer .inner article p a:hover {
   background: #b3cdda;
   color: #000;
+}
+
+.vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.vidList article {
+  width: 80%;
+  height: 250px;
+  padding: 10px;
+  float: left;
+  margin: 100px 10px;
+  background-color: #b3cdda;
+}
+.vidList article:hover {
+  transition: 0.8s;
+  background-color: #fff;
+}
+.vidList article .pic {
+  display: block;
+  width: 400px;
+  height: 250px;
+  float: left;
+  margin-right: 30px;
+  box-shadow: -1px -1px 1px #fff;
+}
+.vidList article .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vidList article .con {
+  width: 100%;
+  height: 40%;
+  padding: 50px;
+}
+.vidList article .con h2 {
+  font: bold 20px/1.2 "Noto Sans KR";
+  color: #444;
+  margin-bottom: 15px;
+  letter-spacing: -2px;
+}
+.vidList article .con p {
+  font: 14px/1.4 "Noto Sans KR";
+  color: #666;
+  margin-bottom: 20px;
+}
+.vidList article .con span {
+  opacity: 0;
+  font: bold 16px/1 "Noto Sans KR";
+  color: #b3cdda;
+}
+
+figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure.pop .btnClose {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  color: #b3cdda;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font: bold 20px/1.4 "poppins";
+  cursor: pointer;
+}
+figure.pop .btnClose:hover {
+  color: #fff;
+  background: #b3cdda;
 }
 
 /* header 영역 */
@@ -565,7 +796,7 @@ table {
 #banner {
   width: 100%;
   padding: 200px 0;
-  background: #b3cdda;
+  background: #fff;
 }
 #banner .inner {
   width: 1180px;
@@ -581,22 +812,122 @@ table {
   clear: both;
 }
 #banner .inner .wrap article:nth-of-type(1) {
-  width: 380px;
-  height: 620px;
+  width: 580px;
+  height: 450px;
   float: left;
   margin-right: 20px;
 }
+#banner .inner .wrap article:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 #banner .inner .wrap article:nth-of-type(2) {
-  width: 380px;
+  width: 580px;
+  height: 230px;
+  float: left;
+  margin-bottom: 20px;
+}
+#banner .inner .wrap article:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#banner .inner .wrap article:nth-of-type(3) {
+  width: 280px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+#banner .inner .wrap article:nth-of-type(3) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#banner .inner .wrap article:nth-of-type(4) {
+  width: 280px;
+  height: 200px;
+  float: left;
+  margin-top: 0px;
+  position: relative;
+}
+#banner .inner .wrap article:nth-of-type(4) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* graph 영역 */
 #graph {
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: relative;
   background-color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+#graph .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#graph .inner article:nth-of-type(1) {
+  float: left;
+  width: 600px;
+  height: 100%;
+  margin-right: 10px;
+}
+#graph .inner article:nth-of-type(1) h3 {
+  padding: 0px 0px 10px;
+  font: bold 14px/1.4 "poppins";
+  color: #b3cdda;
+  letter-spacing: 1px;
+}
+#graph .inner article:nth-of-type(1) h2 {
+  padding: 0px 0px 10px;
+  font: bold 38px/1.4 "poppins";
+  color: #000;
+  letter-spacing: 1px;
+}
+#graph .inner article:nth-of-type(1) p {
+  font: 16px/2 "poppins";
+  color: #666;
+}
+#graph .inner article:nth-of-type(2) {
+  float: left;
+  width: 350px;
+  height: 100%;
+  margin-left: 20px;
+}
+#graph .inner article:nth-of-type(2) .graph1 {
+  width: 225px;
+  height: 225px;
+  border: 5px solid #e5e5e5;
+  border-radius: 50%;
+  text-align: center;
+}
+#graph .inner article:nth-of-type(2) h3 {
+  width: 225px;
+  margin-top: 20px;
+  font: bold 18px/1.4 "poppins";
+  text-align: center;
+}
+#graph .inner article:nth-of-type(3) {
+  float: right;
+  width: 200px;
+  height: 100%;
+  margin-top: 40px;
+}
+#graph .inner article:nth-of-type(3) .graph2 {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #e5e5e5;
+  border-radius: 50%;
+  text-align: center;
+}
+#graph .inner article:nth-of-type(3) h3 {
+  width: 150px;
+  margin-top: 20px;
+  font: bold 16px/1.4 "poppins";
+  text-align: center;
 }
 
 /* footer 영역 */
